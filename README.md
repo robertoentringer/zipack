@@ -19,7 +19,7 @@ Call script from the **package.json**:
 
 ```json
 "scripts": {
-  "pack":  zipack src/manifest.json
+  "pack":  "zipack src/manifest.json"
 }
 ```
 
