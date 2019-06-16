@@ -1,6 +1,6 @@
 {
   "name": "zipack",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Zip chrome extension",
   "bin": {
     "zipack": "src/zipack.js"
