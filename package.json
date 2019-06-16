@@ -1,0 +1,42 @@
+{
+  "name": "zipack",
+  "version": "0.0.5",
+  "description": "Zip chrome extension",
+  "bin": {
+    "zipack": "src/zipack.js"
+  },
+  "main": "src/zipack.js",
+  "scripts": {
+    "lint": "eslint --fix  src/**/*.js --fix",
+    "prepack": "npm run lint",
+    "version": "npm run lint && git add -A",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "zip",
+    "pack",
+    "archiver",
+    "manifest",
+    "chorme",
+    "extension"
+  ],
+  "author": "Roberto Entringer",
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertoentringer/zipack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robertoentringer/zipack/issues"
+  },
+  "homepage": "https://github.com/robertoentringer/zipack#readme"
+}
