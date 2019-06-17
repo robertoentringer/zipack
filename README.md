@@ -1,6 +1,6 @@
 # Zipack
 
-A npm package to create a zip file from a chrome extension.
+A npm package to create a zip file from a chrome extension resource folder.
 
 Author: [Roberto Entringer](https://robertoentringer.com)  
 License: MIT  
