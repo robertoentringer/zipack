@@ -29,7 +29,7 @@ Call script from the **terminal**:
 $ npx zipack src/manifest.json
 ```
 
-## Exemple
+## Example
 
 **src/manifest.json**
 
