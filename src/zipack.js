@@ -4,13 +4,12 @@ const fs = require('fs')
 const path = require('path')
 const archiver = require('archiver')
 
-const file = process.argv.slice(2)[0] || error(new Error('Manifest file is missing or unreadable'))
-
 const error = (err) => {
-  console.error(`\n${err.message}`)
-  console.error(`Please check the manifest file \x1b[31m${file}\x1b[0m and try again\n`)
+  console.error(`${err.message}\n`)
   process.exit()
 }
+
+const file = process.argv.slice(2)[0] || error(new Error('Manifest file is missing or unreadable'))
 
 const filename = (() => {
   try {
@@ -23,7 +22,7 @@ const filename = (() => {
 })()
 
 const stream = fs.createWriteStream(filename)
-stream.on('open', () => console.info(`\nZipping... ${filename}`))
+stream.on('open', () => console.info(`Zipping... ${filename}`))
 stream.on('close', () => console.info('Zip ok!', '\n'))
 stream.on('error', error)
 

@@ -3,11 +3,11 @@
   "version": "0.0.0-development",
   "description": "Zip chrome extension",
   "bin": {
-    "zipack": "./src/zipack.js"
+    "zipack": "src/zipack.js"
   },
   "main": "src/zipack.js",
   "scripts": {
-    "start": "node ./src/zipack.js",
+    "start": "node src/zipack.js",
     "lint": "eslint --fix  src/**/*.js --fix",
     "semantic-release": "semantic-release"
   },
