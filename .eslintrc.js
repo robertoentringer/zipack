@@ -5,14 +5,14 @@ module.exports = {
     browser: true,
     es6: true
   },
-  extends: ["eslint:recommended", "plugin:prettier/recommended"],
-  plugins: ["prettier"],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  plugins: ['prettier'],
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: "module"
+    sourceType: 'module'
   },
   rules: {
-    "comma-dangle": ["error", "never"],
-    "no-console": ["error", { allow: ["error"] }]
+    'comma-dangle': ['error', 'never'],
+    'no-console': ['error', { allow: ['info', 'error'] }]
   }
 }
