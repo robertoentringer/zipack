@@ -1,7 +1,7 @@
 {
   "name": "zipack",
   "version": "1.0.1",
-  "description": "Zip chrome extension",
+  "description": "A npm package to create a zip file from a chrome extension resource folder.",
   "bin": {
     "zipack": "src/zipack.js"
   },
